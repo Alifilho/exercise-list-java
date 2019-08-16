@@ -26,6 +26,7 @@ public class Ex02c {
         p3 = sc.nextDouble();
         
         double con = mediapond(p1, p2, p3);
+            system.out.println(con);
         
     }
 }
