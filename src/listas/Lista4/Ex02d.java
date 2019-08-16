@@ -1,14 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package listas.Lista4;
 
-/**
- *
- * @author aliss
- */
+
 public class Ex02d {
-    
+        public static double imposto(double fab) {
+        double dist = fab + (fab/100)*28;
+        double imposto = fab + (fab/100)*45;
+        double tot;
+        tot = dist + imposto;
+        return tot;
+
+    }
+
+        public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       
+        
+        System.out.println("Digite o custo da fábrica");
+        double fab = sc.nextDouble();
+        double con;
+        con = imposto(fab);
+        System.out.println(con);
+          
+
+
+
+    }
 }
